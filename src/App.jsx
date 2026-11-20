@@ -119,14 +119,14 @@ export default function App() {
     const icsContent = [
       "BEGIN:VCALENDAR",
       "VERSION:2.0",
-      "PRODID:-//Nikkah Invitation//EN",
+      "PRODID:-//Nikah Invitation//EN",
       "BEGIN:VEVENT",
-      "UID:" + Date.now() + "@saleel-nishana-nikkah",
+      "UID:" + Date.now() + "@saleel-nishana-nikah",
       "DTSTAMP:" + new Date().toISOString().replace(/[-:]/g, "").split(".")[0] + "Z",
       "DTSTART:20261212T043000Z", // 10:00 AM IST is 04:30 UTC
       "DTEND:20261212T083000Z",   // 2:00 PM IST is 08:30 UTC
-      "SUMMARY:Nikkah Ceremony of Nishana Sherin & Adv. Saleel Nelliyali",
-      "DESCRIPTION:Nikkah ceremony and reception at Taj Convention Center, Chemmad.",
+      "SUMMARY:Nikah Ceremony of Nishana Sherin & Adv. Saleel Nelliyali",
+      "DESCRIPTION:Nikah ceremony and reception at Taj Convention Center, Chemmad.",
       "LOCATION:Taj Convention Center, Chemmad",
       "END:VEVENT",
       "END:VCALENDAR",
@@ -136,7 +136,7 @@ export default function App() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "Nishana-Saleel-Nikkah.ics";
+    a.download = "Nishana-Saleel-Nikah.ics";
     document.body.appendChild(a);
     a.click();
     a.remove();
@@ -145,7 +145,7 @@ export default function App() {
 
   // WhatsApp share link
   const waShareUrl = `https://wa.me/?text=${encodeURIComponent(
-    `You're invited! 🌙 Join us for the Nikkah Ceremony of Nishana Sherin & Adv. Saleel Nelliyali on Saturday, 12th December 2026, 10:00 AM at Taj Convention Center, Chemmad. ${window.location.href}`
+    `You're invited! 🌙 Join us for the Nikah Ceremony of Nishana Sherin & Adv. Saleel Nelliyali on Saturday, 12th December 2026, 10:00 AM at Taj Convention Center, Chemmad. ${window.location.href}`
   )}`;
 
   return (
@@ -214,7 +214,7 @@ export default function App() {
 
             <div className="envelope-titles">
               <p className="envelope-subtitle">
-                {lang === "en" ? "NIKKAH INVITATION" : "നികാഹ് ക്ഷണക്കത്ത്"}
+                {lang === "en" ? "NIKAH INVITATION" : "നികാഹ് ക്ഷണക്കത്ത്"}
               </p>
               <h1 className="envelope-couple-names">
                 Nishana <span>&</span> Saleel
@@ -299,7 +299,7 @@ export default function App() {
               {lang === "en" ? (
                 <>
                   JOYFULLY INVITE YOU TO CELEBRATE<br />
-                  THEIR NIKKAH
+                  THEIR NIKAH
                 </>
               ) : (
                 <>
@@ -488,7 +488,7 @@ export default function App() {
               {lang === "en" ? "SAVE THE DATE" : "ദിവസം കുറിച്ചു വെക്കൂ"}
             </span>
             <h2 className="section-title">
-              {lang === "en" ? "Date of Nikkah" : "നികാഹ് തീയതി"}
+              {lang === "en" ? "Date of Nikah" : "നികാഹ് തീയതി"}
             </h2>
             <div className="section-title-divider" aria-hidden="true">
               <span className="gold-div-line" />
@@ -502,7 +502,7 @@ export default function App() {
             <div className="nikkah-badge-strip">
               <span className="nh-star">✦</span>
               <span className="nh-title">
-                {lang === "en" ? "THE SACRED NIKKAH" : "വിശുദ്ധ നികാഹ്"}
+                {lang === "en" ? "THE SACRED NIKAH" : "വിശുദ്ധ നികാഹ്"}
               </span>
               <span className="nh-star">✦</span>
             </div>
@@ -516,7 +516,7 @@ export default function App() {
             <div className="nikkah-time-badge">
               <span className="nt-icon">⏰</span>
               <span className="nt-text">
-                {lang === "en" ? "Nikkah Time: 10:00 AM" : "നികാഹ് സമയം: രാവിലെ 10:00"}
+                {lang === "en" ? "Nikah Time: 10:00 AM" : "നികാഹ് സമയം: രാവിലെ 10:00"}
               </span>
             </div>
           </div>
@@ -570,7 +570,7 @@ export default function App() {
             </div>
 
             <span className="venue-tag-pill">
-              {lang === "en" ? "OFFICIAL NIKKAH VENUE" : "നികാഹ് വേദി"}
+              {lang === "en" ? "OFFICIAL NIKAH VENUE" : "നികാഹ് വേദി"}
             </span>
 
             <h3 className="venue-grand-name">
@@ -584,7 +584,7 @@ export default function App() {
             <div className="venue-program-strip">
               <div className="program-item">
                 <span className="prog-icon">💍</span>
-                <span className="prog-label">{lang === "en" ? "Nikkah Ceremony" : "നികാഹ് ചടങ്ങ്"}</span>
+                <span className="prog-label">{lang === "en" ? "Nikah Ceremony" : "നികാഹ് ചടങ്ങ്"}</span>
                 <span className="prog-time">10:00 AM</span>
               </div>
               <div className="program-divider" />
@@ -701,7 +701,7 @@ export default function App() {
                 <div className="sc-title-row">
                   <span className="sc-icon-circle">🤲</span>
                   <h3 className="sc-title">
-                    {lang === "en" ? "Nikkah Ceremony" : "നികാഹ് ചടങ്ങ്"}
+                    {lang === "en" ? "Nikah Ceremony" : "നികാഹ് ചടങ്ങ്"}
                   </h3>
                 </div>
                 <p className="sc-desc">
