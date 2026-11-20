@@ -638,105 +638,73 @@ export default function App() {
           </div>
         </section>
 
-        {/* 5. EVENT SCHEDULE (Template: public/3.jpeg - Ivory Pearl Marble - High Contrast Cards) */}
+        {/* 5. EVENT SCHEDULE (Template: public/3.jpeg - Ivory Pearl Marble - Timeline Layout) */}
         <section id="schedule" className="section schedule-section theme-ivory-3">
-          <div className="section-header-ornate">
-            <span className="ornate-sub-badge">
-              {lang === "en" ? "ITINERARY & TIMINGS" : "പരിപാടി ക്രമം"}
-            </span>
-            <h2 className="section-title">
+          <div className="timeline-header">
+            <h2 className="timeline-main-title">
               {lang === "en" ? "Event Schedule" : "നികാഹ് ദിന പരിപാടികൾ"}
             </h2>
-            <p className="section-sub">
+            <p className="timeline-main-sub">
               {lang === "en"
-                ? "Saturday, 12th December 2026 · Taj Convention Center"
-                : "ശനിയാഴ്ച, 12 ഡിസംബര്‍ 2026 · താജ് കൺവെൻഷൻ സെന്റർ"}
+                ? "SATURDAY, 12TH DECEMBER 2026"
+                : "ശനിയാഴ്ച, 12 ഡിസംബർ 2026"}
             </p>
-            <div className="section-title-divider" aria-hidden="true">
-              <span className="gold-div-line" />
-              <span className="gold-div-gem">❖</span>
-              <span className="gold-div-line" />
-            </div>
           </div>
 
-          <div className="schedule-cards-list">
-            {/* 1. Guest Arrival */}
-            <div className="schedule-card">
-              <div className="sc-time-badge">
-                <span className="sc-time-icon">⏰</span>
-                <span className="sc-time-text">9:30 AM</span>
-              </div>
-              <div className="sc-body">
-                <div className="sc-title-row">
-                  <span className="sc-icon-circle">🕊</span>
-                  <h3 className="sc-title">
+          <div className="timeline-container">
+            <div className="timeline-list">
+              {/* 1. Guest Arrival */}
+              <div className="timeline-item">
+                <div className="timeline-node" aria-hidden="true">
+                  <span className="timeline-node-inner" />
+                </div>
+                <div className="timeline-content">
+                  <span className="timeline-time">9:30 AM</span>
+                  <h3 className="timeline-title">
                     {lang === "en" ? "Guest Arrival" : "അതിഥികൾ എത്തിച്ചേരൽ"}
                   </h3>
+                  <p className="timeline-desc">
+                    {lang === "en"
+                      ? "Welcome and seating at Taj Convention Center"
+                      : "താജ് കൺവെൻഷൻ സെന്ററിലേക്ക് സ്വാഗതവും ഇരിപ്പിടവും"}
+                  </p>
                 </div>
-                <p className="sc-desc">
-                  {lang === "en"
-                    ? "Welcome and seating at Taj Convention Center"
-                    : "താജ് കൺവെൻഷൻ സെന്ററിലേക്ക് സ്വാഗതവും ഇരിപ്പിടവും"}
-                </p>
               </div>
-            </div>
 
-            {/* Connector */}
-            <div className="schedule-connector" aria-hidden="true">
-              <span className="s-line" />
-              <span className="s-gem">✦</span>
-              <span className="s-line" />
-            </div>
-
-            {/* 2. Nikkah Ceremony (Main Highlight) */}
-            <div className="schedule-card highlight-main-nikkah">
-              <div className="sc-badge-banner">
-                <span>{lang === "en" ? "SACRED CEREMONY" : "പ്രധാന കർമ്മം"}</span>
-              </div>
-              <div className="sc-time-badge main-event-time">
-                <span className="sc-time-icon">💍</span>
-                <span className="sc-time-text">10:00 AM</span>
-              </div>
-              <div className="sc-body">
-                <div className="sc-title-row">
-                  <span className="sc-icon-circle">🤲</span>
-                  <h3 className="sc-title">
+              {/* 2. Nikah Ceremony */}
+              <div className="timeline-item">
+                <div className="timeline-node" aria-hidden="true">
+                  <span className="timeline-node-inner" />
+                </div>
+                <div className="timeline-content">
+                  <span className="timeline-time">10:00 AM</span>
+                  <h3 className="timeline-title">
                     {lang === "en" ? "Nikah Ceremony" : "നികാഹ് ചടങ്ങ്"}
                   </h3>
+                  <p className="timeline-desc">
+                    {lang === "en"
+                      ? "The blessed solemnization"
+                      : "അനുഗ്രഹീതമായ നികാഹ് കർമ്മങ്ങൾ"}
+                  </p>
                 </div>
-                <p className="sc-desc">
-                  {lang === "en"
-                    ? "The blessed solemnization"
-                    : "അനുഗ്രഹീതമായ നികാഹ് കർമ്മങ്ങൾ"}
-                </p>
               </div>
-            </div>
 
-            {/* Connector */}
-            <div className="schedule-connector" aria-hidden="true">
-              <span className="s-line" />
-              <span className="s-gem">✦</span>
-              <span className="s-line" />
-            </div>
-
-            {/* 3. Reception Begins */}
-            <div className="schedule-card">
-              <div className="sc-time-badge">
-                <span className="sc-time-icon">🍽</span>
-                <span className="sc-time-text">11:00 AM</span>
-              </div>
-              <div className="sc-body">
-                <div className="sc-title-row">
-                  <span className="sc-icon-circle">✨</span>
-                  <h3 className="sc-title">
+              {/* 3. Reception Begins */}
+              <div className="timeline-item">
+                <div className="timeline-node" aria-hidden="true">
+                  <span className="timeline-node-inner" />
+                </div>
+                <div className="timeline-content">
+                  <span className="timeline-time">11:00 AM</span>
+                  <h3 className="timeline-title">
                     {lang === "en" ? "Reception Begins" : "വിരുന്ന് ആരംഭം"}
                   </h3>
+                  <p className="timeline-desc">
+                    {lang === "en"
+                      ? "Refreshments and celebration with family and friends"
+                      : "കുടുംബത്തോടും സുഹൃത്തുക്കളോടുമൊപ്പം സൽക്കാരവും സന്തോഷവും"}
+                  </p>
                 </div>
-                <p className="sc-desc">
-                  {lang === "en"
-                    ? "Refreshment and celebration with family and friends"
-                    : "കുടുംബത്തോടും സുഹൃത്തുക്കളോടുമൊപ്പം സൽക്കാരവും സന്തോഷവും"}
-                </p>
               </div>
             </div>
           </div>
