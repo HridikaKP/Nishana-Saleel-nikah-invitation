@@ -145,7 +145,7 @@ export default function App() {
 
   // WhatsApp share link
   const waShareUrl = `https://wa.me/?text=${encodeURIComponent(
-    `You're invited! 🌙 Join us for the Nikah Ceremony of Nishana Sherin & Adv. Saleel Nelliyali on Saturday, 12th December 2026, 10:00 AM at Taj Convention Center, Chemmad. ${window.location.href}`
+    `You're invited! 🌙 Join us for the Nikah Ceremony of Nishana Sherin & Adv. Saleel Nelliyali on Saturday, 12th December 2026, 10:00 AM at Taj Convention Center, Chemmad.\n\n${window.location.origin || window.location.href}`
   )}`;
 
   return (
