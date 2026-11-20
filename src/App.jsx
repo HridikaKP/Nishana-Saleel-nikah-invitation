@@ -799,6 +799,15 @@ export default function App() {
               : "മറ്റുള്ളവരെയും ക്ഷണിക്കൂ"}
           </p>
 
+          <div className="share-preview-card">
+            <img
+              src="/thumbnail.jpg"
+              alt="Nishana & Saleel Nikah Link Preview"
+              className="share-preview-thumb"
+              loading="lazy"
+            />
+          </div>
+
           <a
             href={waShareUrl}
             target="_blank"
